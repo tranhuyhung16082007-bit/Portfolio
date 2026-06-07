@@ -283,10 +283,66 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
   </div>
 
   <div id="modal-task-4" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" style="max-width: 900px;">
       <span class="close-btn" onclick="closeModal('modal-task-4')">&times;</span>
-      <h2>Nhiệm vụ 4: Hợp tác trực tuyến</h2>
-      <p><em>[Minh chứng sử dụng công cụ quản lý, cách thức phối hợp]</em></p>
+      <h2 style="margin-bottom: 20px; color: var(--primary-color);">Nhiệm vụ 4: Kỹ năng Hợp tác Trực tuyến</h2>
+      
+      <p style="margin-bottom: 24px;">Trong quá trình làm việc nhóm, mình đã chủ động thiết lập và sử dụng thành thạo hệ sinh thái 4 công cụ trực tuyến. Việc này không chỉ giúp hoàn thành phần việc cá nhân mà còn tối ưu hóa luồng công việc (Workflow) của toàn đội.</p>
+
+      <div style="margin-bottom: 24px;">
+        <h3>1. Hệ sinh thái công cụ đã triển khai</h3>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 12px;">
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: #0284c7;">Quản lý dự án (Trello)</strong>
+            <p style="font-size: 0.9em; margin-top: 8px;">Theo dõi tiến độ bằng phương pháp Kanban (To Do - Doing - Done), gán thẻ màu, checklist và thiết lập Deadline.</p>
+          </div>
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: #16a34a;">Lưu trữ & Chia sẻ (Google Drive)</strong>
+            <p style="font-size: 0.9em; margin-top: 8px;">Tạo thư mục Shared Drive chung, phân quyền truy cập (View/Edit) chặt chẽ cho từng cấp độ thành viên.</p>
+          </div>
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: #eab308;">Soạn thảo (Google Docs)</strong>
+            <p style="font-size: 0.9em; margin-top: 8px;">Cộng tác viết báo cáo thời gian thực, sử dụng tính năng Suggestion và Comment để review chéo nội dung.</p>
+          </div>
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <strong style="color: #8b5cf6;">Giao tiếp (Discord)</strong>
+            <p style="font-size: 0.9em; margin-top: 8px;">Phân chia các Text Channel theo từng hạng mục công việc (Data, Code, Report) và dùng Voice chat để họp Scrum.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>2. Tối ưu hóa quy trình (Tích hợp tính năng nâng cao)</h3>
+        <p>Để đạt được mức độ chuyên nghiệp và tránh hiện tượng "trôi tin nhắn", mình đã đề xuất thực hiện <strong>tích hợp Webhook tự động giữa Trello và Discord</strong>. Cụ thể quy trình:</p>
+        <ul style="margin-left: 20px; margin-top: 8px; background: #f8fafc; padding: 16px 16px 16px 40px; border-radius: 8px; border: 1px solid var(--border-color);">
+          <li>Khi một thành viên (ví dụ như mình) hoàn thành một task và kéo thẻ từ cột "Doing" sang cột "Done" trên Trello.</li>
+          <li>Trello Bot sẽ tự động kích hoạt Webhook, bắn thông báo về kênh <code>#thong-bao-tien-do</code> trên Discord.</li>
+          <li><strong>Lợi ích:</strong> Giảm thiểu thời gian phải báo cáo thủ công. Project Manager và các thành viên khác nắm bắt được sự thay đổi trạng thái của dự án theo thời gian thực (Real-time).</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>3. Nhật ký minh chứng cá nhân</h3>
+        <p style="color: var(--text-muted); font-size: 0.95em; margin-bottom: 16px;">Dưới đây là các minh chứng thể hiện sự đóng góp thực tế của cá nhân mình trên các nền tảng (Hiển thị rõ tên tài khoản hoạt động):</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+          <!-- Ảnh Trello -->
+          <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
+            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH TRELLO TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Giao việc cho cá nhân & Check-list</span></p>
+          </div>
+          <!-- Ảnh Google Docs -->
+          <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
+            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH GOOGLE DOCS TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Lịch sử chỉnh sửa (Version History) của cá nhân</span></p>
+          </div>
+          <!-- Ảnh Discord -->
+          <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
+            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH DISCORD TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Tương tác thảo luận và thông báo từ Bot Trello</span></p>
+          </div>
+          <!-- Ảnh Google Drive -->
+          <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
+            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH DRIVE TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Cấu trúc thư mục chia sẻ khoa học</span></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
