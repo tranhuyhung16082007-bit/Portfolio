@@ -35,7 +35,7 @@ document.querySelector('#app').innerHTML = `
         <div class="grid">
           <!-- Task 1 -->
           <div class="card" onclick="openModal('modal-task-1')">
-            <div class="card-image placeholder-img">Ảnh Bài 1</div>
+            <div class="card-image grad-1">Bài 1</div>
             <div class="card-content">
               <h3>1. Quản lý tệp và thư mục</h3>
               <p>Thao tác cơ bản với tệp tin và cấu trúc thư mục tối ưu.</p>
@@ -44,7 +44,7 @@ document.querySelector('#app').innerHTML = `
           
           <!-- Task 2 -->
           <div class="card" onclick="openModal('modal-task-2')">
-            <div class="card-image placeholder-img">Ảnh Bài 2</div>
+            <div class="card-image grad-2">Bài 2</div>
             <div class="card-content">
               <h3>2. Tìm kiếm thông tin</h3>
               <p>Sử dụng toán tử tìm kiếm nâng cao và đánh giá thông tin học thuật.</p>
@@ -53,7 +53,7 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Task 3 -->
           <div class="card" onclick="openModal('modal-task-3')">
-            <div class="card-image placeholder-img">Ảnh Bài 3</div>
+            <div class="card-image grad-3">Bài 3</div>
             <div class="card-content">
               <h3>3. Viết Prompt hiệu quả</h3>
               <p>Kỹ thuật Prompt Engineering cơ bản và nâng cao.</p>
@@ -62,7 +62,7 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Task 4 -->
           <div class="card" onclick="openModal('modal-task-4')">
-            <div class="card-image placeholder-img">Ảnh Bài 4</div>
+            <div class="card-image grad-4">Bài 4</div>
             <div class="card-content">
               <h3>4. Hợp tác trực tuyến</h3>
               <p>Sử dụng các công cụ quản lý dự án để làm việc nhóm.</p>
@@ -71,7 +71,7 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Task 5 -->
           <div class="card" onclick="openModal('modal-task-5')">
-            <div class="card-image placeholder-img">Ảnh Bài 5</div>
+            <div class="card-image grad-5">Bài 5</div>
             <div class="card-content">
               <h3>5. Sáng tạo nội dung với AI</h3>
               <p>Ứng dụng AI tạo sinh vào việc xây dựng sản phẩm truyền thông.</p>
@@ -80,7 +80,7 @@ document.querySelector('#app').innerHTML = `
 
           <!-- Task 6 -->
           <div class="card" onclick="openModal('modal-task-6')">
-            <div class="card-image placeholder-img">Ảnh Bài 6</div>
+            <div class="card-image grad-6">Bài 6</div>
             <div class="card-content">
               <h3>6. AI có trách nhiệm</h3>
               <p>Bộ nguyên tắc sử dụng AI có đạo đức và trách nhiệm.</p>
