@@ -405,10 +405,54 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
   </div>
 
   <div id="modal-task-6" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" style="max-width: 900px;">
       <span class="close-btn" onclick="closeModal('modal-task-6')">&times;</span>
-      <h2>Nhiệm vụ 6: AI có trách nhiệm</h2>
-      <p><em>[Trình bày bộ nguyên tắc cá nhân, liên hệ với các nguyên tắc đạo đức]</em></p>
+      <h2 style="margin-bottom: 20px; color: var(--primary-color);">Nhiệm vụ 6: Sử dụng AI có trách nhiệm và Liêm chính học thuật</h2>
+      
+      <div style="margin-bottom: 24px;">
+        <h3>1. Khảo sát chính sách học thuật & Vấn đề Đạo đức</h3>
+        <p>Thông qua việc tham khảo quy chế Đào tạo và Liêm chính học thuật của nhà trường, mình nhận thấy một nguyên tắc cốt lõi: <strong>AI được khuyến khích sử dụng như một "Trợ lý Tư duy", nhưng nghiêm cấm việc dùng AI để sinh ra nội dung và nhận là chất xám của mình (Đạo văn/Gian lận).</strong></p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+          <div style="background: #fef2f2; padding: 16px; border-radius: 8px; border: 1px solid #fca5a5;">
+            <strong style="color: #dc2626;">Ranh giới Gian lận (Cheating)</strong>
+            <p style="font-size: 0.9em; margin-top: 8px;">Copy-paste nguyên văn bài luận của AI đem nộp. Sử dụng AI để giải bài tập lập trình mà không hiểu code. Điều này trực tiếp làm thui chột khả năng tư duy phản biện và kỹ năng giải quyết vấn đề cốt lõi của sinh viên IT.</p>
+          </div>
+          <div style="background: #f0fdf4; padding: 16px; border-radius: 8px; border: 1px solid #86efac;">
+            <strong style="color: #16a34a;">Hỗ trợ Hợp lý (Fair Use)</strong>
+            <p style="font-size: 0.9em; margin-top: 8px;">Dùng AI để tóm tắt tài liệu dài, giải thích lỗi (Debug) trong lập trình, gợi ý cấu trúc bài thuyết trình. Tuy nhiên, sau đó sinh viên phải tự viết lại code và biên tập bằng văn phong, kiến thức cá nhân.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>2. Ứng dụng thực tiễn: Chuẩn bị Thuyết trình môn học</h3>
+        <p>Mình đã áp dụng quy tắc trên vào việc làm slide báo cáo giữa kỳ:</p>
+        <ul style="margin-left: 20px; margin-top: 8px; background: var(--bg-color); padding: 16px 16px 16px 40px; border-radius: 8px; border: 1px solid var(--border-color);">
+          <li><strong>Prompt:</strong> <em>"Liệt kê 5 gạch đầu dòng cấu trúc cho bài thuyết trình 10 phút về Kiến trúc máy tính."</em></li>
+          <li><strong>Đánh giá & Chỉnh sửa:</strong> AI đưa ra cấu trúc tốt nhưng thiếu tính thực tiễn. Mình đã giữ lại cấu trúc khung, nhưng tự nghiên cứu và đưa thêm hình ảnh thực tế của chip ARM và x86 vào slide.</li>
+          <li><strong>Minh bạch trích dẫn:</strong> Ở slide "Tài liệu tham khảo" cuối cùng, mình ghi rõ ràng: <em>"Cấu trúc slide được hỗ trợ bởi ChatGPT (Phiên bản GPT-4o, 2026), nội dung chi tiết do cá nhân tự nghiên cứu."</em></li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>3. Bộ quy tắc cá nhân (5 Nguyên tắc vàng)</h3>
+        <p>Nhằm đảm bảo sự phát triển kỹ năng lâu dài, mình tự thiết lập bộ 5 nguyên tắc đạo đức sau:</p>
+        <ol style="margin-left: 20px; margin-top: 8px; line-height: 1.8;">
+          <li><strong>AI là Thầy giáo (Tutor), không phải Thợ làm thuê:</strong> Chỉ dùng AI để giải thích khái niệm, tuyệt đối không nhờ AI code hoặc viết bài nộp hộ.</li>
+          <li><strong>Kiểm chứng chéo (Fact-check):</strong> Mọi thông tin, số liệu AI đưa ra (nhất là số liệu thống kê) phải được kiểm chứng bằng Google Scholar.</li>
+          <li><strong>Công khai và Minh bạch:</strong> Luôn trân trọng quyền Sở hữu trí tuệ (IP) bằng cách ghi chú rõ ràng các công cụ AI đã dùng trong dự án.</li>
+          <li><strong>Chống định kiến (Bias):</strong> Hiểu rằng AI có thể mang định kiến, do đó luôn phải giữ tư duy phản biện (Critical Thinking) khi đọc kết quả của AI.</li>
+          <li><strong>Bảo mật thông tin:</strong> Tuyệt đối không đưa dữ liệu nhạy cảm, bài tập độc quyền của giảng viên, hay mã nguồn nội bộ lên khung chat AI để tránh rò rỉ dữ liệu.</li>
+        </ol>
+      </div>
+
+      <div style="margin-bottom: 12px;">
+        <h3>4. Infographic: AI Ethics in Education</h3>
+        <div style="background: #e2e8f0; height: 350px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center; margin-top: 12px;">
+            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH INFOGRAPHIC TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Gợi ý: Bạn dùng Canva tạo 1 chiếc Infographic tóm tắt 5 nguyên tắc trên rồi chèn vào đây nhé!</span></p>
+        </div>
+      </div>
     </div>
   </div>
 `
