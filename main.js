@@ -471,3 +471,35 @@ window.onclick = function(event) {
     event.target.style.display = "none";
   }
 }
+
+// --- IMAGE LIGHTBOX (Bấm vào ảnh để phóng to) ---
+const lightboxHTML = `
+  <div id="image-lightbox" style="display:none; position:fixed; z-index:9999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.85); backdrop-filter: blur(5px); align-items:center; justify-content:center; cursor:zoom-out;">
+    <span style="position:absolute; top:20px; right:30px; color:white; font-size:40px; font-weight:bold; cursor:pointer;">&times;</span>
+    <img id="lightbox-img" style="max-width:90%; max-height:90%; object-fit:contain; border-radius:8px; box-shadow:0 10px 25px rgba(0,0,0,0.5); transition: transform 0.3s ease;">
+  </div>
+`;
+document.body.insertAdjacentHTML('beforeend', lightboxHTML);
+
+const lightbox = document.getElementById('image-lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+// Make all images inside modals clickable
+document.querySelectorAll('.modal-content img').forEach(img => {
+  img.style.cursor = 'zoom-in';
+  img.title = 'Bấm để phóng to ảnh';
+});
+
+// Event delegation for image click
+document.addEventListener('click', (e) => {
+  if (e.target.tagName === 'IMG' && e.target.closest('.modal-content')) {
+    lightbox.style.display = 'flex';
+    lightboxImg.src = e.target.src;
+  }
+});
+
+// Close lightbox on click
+lightbox.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
