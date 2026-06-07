@@ -92,9 +92,21 @@ document.querySelector('#app').innerHTML = `
 
     <section id="reflection" class="reflection-section">
       <div class="container">
-        <h2 class="section-title">Tổng kết và Đánh giá</h2>
-        <div class="reflection-box">
-          <p><em>[Nội dung tổng kết về những gì đã học, thách thức đã vượt qua, và dự định áp dụng các kỹ năng này vào tương lai...]</em></p>
+        <h2 class="section-title">Tổng kết và Đánh giá Bản thân</h2>
+        <div class="reflection-box" style="text-align: left;">
+          <h3 style="color: var(--primary-color); margin-bottom: 12px;">1. Nhìn lại hành trình và Sự trưởng thành</h3>
+          <p style="margin-bottom: 16px;">Khóa học <strong>"Nhập môn Công nghệ số và ứng dụng AI"</strong> không chỉ cung cấp cho mình các kỹ năng nền tảng mà còn mở ra một góc nhìn hoàn toàn mới về cách vận hành của thế giới công nghệ hiện đại. Thử thách lớn nhất đối với mình trong dự án này là việc phải làm quen với vô số các công cụ AI và nền tảng quản lý trực tuyến. Ban đầu, việc viết Prompt làm sao cho AI hiểu đúng ý đồ là một rào cản lớn. Tuy nhiên, qua từng bài tập, mình đã rèn luyện được tư duy phân tích, biết cách chia nhỏ vấn đề (Chain-of-Thought) và giao tiếp hiệu quả hơn với máy móc. Sự trưởng thành lớn nhất của mình chính là việc chuyển đổi từ tư duy "dùng AI để làm hộ" sang tư duy <strong>"dùng AI để mở rộng giới hạn sáng tạo và năng suất"</strong>.</p>
+          
+          <h3 style="color: var(--primary-color); margin-bottom: 12px;">2. Định hướng áp dụng trong tương lai</h3>
+          <p>Là một sinh viên ngành Công nghệ Thông tin, những kỹ năng này chính là hành trang cốt lõi cho chặng đường phía trước. Cụ thể:</p>
+          <ul style="margin-left: 20px; margin-top: 8px; margin-bottom: 16px; line-height: 1.8;">
+            <li><strong>Trong học tập:</strong> Mình sẽ ứng dụng các công cụ Generative AI để tăng tốc quá trình nghiên cứu tài liệu học thuật, hỗ trợ đọc hiểu tài liệu tiếng Anh chuyên ngành và đặc biệt là hỗ trợ tìm lỗi (Debug) trong quá trình học lập trình.</li>
+            <li><strong>Trong công việc thực tế:</strong> Việc làm quen với hệ sinh thái quản lý dự án nhóm (Trello, Drive, Discord) giúp mình sẵn sàng hòa nhập nhanh chóng với mô hình làm việc Agile/Scrum tại các công ty công nghệ chuyên nghiệp sau này.</li>
+            <li><strong>Về đạo đức nghề nghiệp:</strong> Việc nắm vững các quy tắc liêm chính học thuật và bảo mật dữ liệu sẽ giúp mình trở thành một Kỹ sư phần mềm có trách nhiệm, luôn tôn trọng quyền sở hữu trí tuệ và bảo mật mã nguồn.</li>
+          </ul>
+          <p style="font-weight: bold; text-align: center; color: var(--text-main); font-size: 1.1em; margin-top: 32px; padding-top: 24px; border-top: 1px solid var(--border-color);">
+            "Công nghệ không thay thế con người, nhưng những người biết sử dụng công nghệ sẽ thay thế những người không biết."
+          </p>
         </div>
       </div>
     </section>
