@@ -347,10 +347,60 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
   </div>
 
   <div id="modal-task-5" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" style="max-width: 900px;">
       <span class="close-btn" onclick="closeModal('modal-task-5')">&times;</span>
-      <h2>Nhiệm vụ 5: Sáng tạo nội dung với AI</h2>
-      <p><em>[Trưng bày sản phẩm hoàn thiện, thể hiện sự hỗ trợ của AI]</em></p>
+      <h2 style="margin-bottom: 20px; color: var(--primary-color);">Nhiệm vụ 5: Sáng tạo nội dung với AI</h2>
+      
+      <p style="margin-bottom: 24px;">Trong nhiệm vụ này, mình đã đóng vai trò là một Content Creator để sản xuất một bài <strong>Blog công nghệ về chủ đề "Tương lai của Web 3.0"</strong>, kết hợp sức mạnh của 3 công cụ AI tạo sinh (Generative AI) khác nhau để đẩy nhanh tiến độ.</p>
+
+      <div style="margin-bottom: 24px;">
+        <h3>1. Quá trình sử dụng 3 công cụ AI tạo sinh</h3>
+        <div style="display: flex; flex-direction: column; gap: 16px; margin-top: 12px;">
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color); border-left: 4px solid #10b981;">
+            <strong style="color: #047857; font-size: 1.1em;">A. ChatGPT (AI tạo văn bản)</strong>
+            <p style="margin-top: 8px; font-size: 0.95em;"><strong>Prompt:</strong> <em>"Đóng vai là một chuyên gia Blockchain. Viết một dàn ý chi tiết cho bài blog 1000 chữ giải thích Web 3.0 là gì, dành cho độc giả đại chúng không rành kỹ thuật."</em></p>
+            <p style="margin-top: 4px; font-size: 0.95em;"><strong>Cách tích hợp:</strong> Thay vì copy-paste 100%, mình dùng ChatGPT để thiết lập cấu trúc xương sống (Outline). Sau đó, mình tự viết lại các đoạn văn bằng ngôn từ của cá nhân mình (Human-touch) để bài viết có cảm xúc và mang đậm dấu ấn cá nhân.</p>
+          </div>
+          
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color); border-left: 4px solid #8b5cf6;">
+            <strong style="color: #5b21b6; font-size: 1.1em;">B. Midjourney (AI tạo hình ảnh)</strong>
+            <p style="margin-top: 8px; font-size: 0.95em;"><strong>Prompt:</strong> <em>"A futuristic abstract illustration of decentralized internet Web 3.0, glowing nodes, cyberspace, neon blue and purple --ar 16:9 --v 6.0"</em></p>
+            <p style="margin-top: 4px; font-size: 0.95em;"><strong>Cách tích hợp:</strong> Mình đã liên tục tinh chỉnh Prompt (thêm bớt tham số tỷ lệ <code>--ar</code>) để tìm ra bức ảnh có bố cục phù hợp nhất làm ảnh bìa (Thumbnail) cho bài blog.</p>
+          </div>
+
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color); border-left: 4px solid #0ea5e9;">
+            <strong style="color: #0369a1; font-size: 1.1em;">C. Canva AI (Hỗ trợ thiết kế)</strong>
+            <p style="margin-top: 8px; font-size: 0.95em;"><strong>Cách tích hợp:</strong> Sử dụng công cụ <em>Magic Eraser</em> của Canva AI để xóa các chi tiết rác (artifacts) do Midjourney tạo lỗi. Đồng thời dùng AI để đề xuất Font chữ (Typography) tiêu đề hợp với phong cách Tương lai (Futuristic).</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>2. Phân tích vai trò của AI trong sáng tạo</h3>
+        <p>Sau khi hoàn thiện ấn phẩm, mình nhận thấy AI mang lại tác động cực lớn đến quy trình sáng tạo (Workflow):</p>
+        <ul style="margin-left: 20px; margin-top: 8px;">
+          <li><strong>Điểm AI làm xuất sắc:</strong> Phá vỡ hội chứng "Sợ trang giấy trắng" (Blank page syndrome). Tốc độ tạo ra ý tưởng nền móng và hình ảnh phác thảo là chưa từng có (chỉ mất vài giây).</li>
+          <li><strong>Điểm còn hạn chế:</strong> Văn bản do AI sinh ra đôi khi bị lặp cấu trúc, giọng văn khá "máy móc". Hình ảnh AI thường hay bị lỗi text hoặc sai tỷ lệ ở các chi tiết ngón tay/khuôn mặt nếu không biết cách prompt kỹ.</li>
+          <li><strong>Sự chuyển dịch Workflow:</strong> Quy trình làm việc của mình đã thay đổi hoàn toàn: <em>AI tạo nền móng ➔ Con người kiểm duyệt tính đúng đắn ➔ Con người tinh chỉnh và thổi hồn (Cảm xúc & Kinh nghiệm) ➔ Hoàn thiện sản phẩm.</em></li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>3. Các vấn đề đạo đức (Ethics)</h3>
+        <p>Khi sử dụng AI tạo sinh, mình luôn tuân thủ nguyên tắc <strong>Minh bạch</strong>. Cụ thể, mình có ghi chú rõ ràng ở cuối bài Blog là hình ảnh được hỗ trợ tạo bởi Midjourney và dàn ý được tham khảo từ ChatGPT để người đọc nắm rõ.</p>
+      </div>
+
+      <div style="margin-bottom: 12px;">
+        <h3>4. Hình ảnh Minh chứng & Sản phẩm hoàn thiện</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
+          <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
+            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH BÀI BLOG TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Sản phẩm Bài Blog hoàn thiện</span></p>
+          </div>
+          <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
+            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH QUÁ TRÌNH TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Lịch sử Chat Prompt và Canva AI</span></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
