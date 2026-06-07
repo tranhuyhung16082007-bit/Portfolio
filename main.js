@@ -153,13 +153,11 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
         
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
           <!-- Khu vực bạn sẽ chèn ảnh 1 bằng thẻ <img> -->
-          <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[XÓA Ô NÀY VÀ CHÈN THẺ <img src="anh1.jpg"> TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Cấu trúc thư mục & Đổi tên</span></p>
-          </div>
+          <img src="/b1_anh1.png" alt="Cấu trúc thư mục" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+          <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Cấu trúc thư mục & Đổi tên</p>
           <!-- Khu vực bạn sẽ chèn ảnh 2 bằng thẻ <img> -->
-          <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[XÓA Ô NÀY VÀ CHÈN THẺ <img src="anh2.jpg"> TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Cut/Paste & Recycle Bin</span></p>
-          </div>
+          <img src="/b1_anh2.png" alt="Recycle Bin" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+          <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Cut/Paste & Recycle Bin</p>
         </div>
       </div>
     </div>
@@ -225,9 +223,8 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
       <div style="margin-bottom: 24px;">
         <h3>3. Hình ảnh minh chứng tìm kiếm</h3>
         <div style="display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 16px;">
-          <div style="background: #e2e8f0; height: 250px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[XÓA Ô NÀY VÀ CHÈN THẺ <img src="anh3.jpg"> TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Nhập toán tử nâng cao trên Google Scholar & Hiển thị kết quả</span></p>
-          </div>
+          <img src="/b2_anh3.png" alt="Google Scholar" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Nhập toán tử nâng cao trên Google Scholar & Hiển thị kết quả</p>
         </div>
       </div>
     </div>
@@ -287,9 +284,8 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
 
       <div style="margin-bottom: 12px;">
         <h3>5. Hình ảnh minh chứng</h3>
-        <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center; margin-top: 12px;">
-            <p style="color: #64748b; font-weight: bold;">[XÓA Ô NÀY VÀ CHÈN THẺ <img src="anh_prompt.jpg"> TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Ảnh chụp màn hình chat thực tế với AI sử dụng Prompt Nâng cao</span></p>
-        </div>
+        <img src="/b3_anh4.png" alt="Prompt Nâng cao" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Ảnh chụp màn hình chat thực tế với AI sử dụng Prompt Nâng cao</p>
       </div>
     </div>
   </div>
@@ -338,21 +334,17 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
         <p style="color: var(--text-muted); font-size: 0.95em; margin-bottom: 16px;">Dưới đây là các minh chứng thể hiện sự đóng góp thực tế của cá nhân mình trên các nền tảng (Hiển thị rõ tên tài khoản hoạt động):</p>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
           <!-- Ảnh Trello -->
-          <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH TRELLO TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Giao việc cho cá nhân & Check-list</span></p>
-          </div>
+          <div style="display: flex; flex-direction: column;"><img src="/b4_anh1.png" alt="Trello" style="width: 100%; height: 180px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+          <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Trello</p></div>
           <!-- Ảnh Google Docs -->
-          <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH GOOGLE DOCS TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Lịch sử chỉnh sửa (Version History) của cá nhân</span></p>
-          </div>
+          <div style="display: flex; flex-direction: column;"><img src="/b4_anh2.png" alt="Docs" style="width: 100%; height: 180px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+          <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Google Docs</p></div>
           <!-- Ảnh Discord -->
-          <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH DISCORD TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Tương tác thảo luận và thông báo từ Bot Trello</span></p>
-          </div>
+          <div style="display: flex; flex-direction: column;"><img src="/b4_anh3.png" alt="Discord" style="width: 100%; height: 180px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+          <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Discord</p></div>
           <!-- Ảnh Google Drive -->
-          <div style="background: #e2e8f0; height: 180px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH DRIVE TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Cấu trúc thư mục chia sẻ khoa học</span></p>
-          </div>
+          <div style="display: flex; flex-direction: column;"><img src="/b4_anh4.png" alt="Drive" style="width: 100%; height: 180px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+          <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Google Drive</p></div>
         </div>
       </div>
     </div>
@@ -405,12 +397,10 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
       <div style="margin-bottom: 12px;">
         <h3>4. Hình ảnh Minh chứng & Sản phẩm hoàn thiện</h3>
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 12px;">
-          <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH BÀI BLOG TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Sản phẩm Bài Blog hoàn thiện</span></p>
-          </div>
-          <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
-            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH QUÁ TRÌNH TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Lịch sử Chat Prompt và Canva AI</span></p>
-          </div>
+          <div style="display: flex; flex-direction: column;"><img src="/b5_anh2.png" alt="Blog" style="width: 100%; height: 250px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Sản phẩm Bài Blog hoàn thiện</p></div>
+          <div style="display: flex; flex-direction: column;"><img src="/b5_anh1.png" alt="Chat Prompt" style="width: 100%; height: 250px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: cover;">
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Lịch sử Chat Prompt và Canva</p></div>
         </div>
       </div>
     </div>
@@ -461,9 +451,8 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
 
       <div style="margin-bottom: 12px;">
         <h3>4. Infographic: AI Ethics in Education</h3>
-        <div style="background: #e2e8f0; height: 350px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center; margin-top: 12px;">
-            <p style="color: #64748b; font-weight: bold;">[CHÈN ẢNH INFOGRAPHIC TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Gợi ý: Bạn dùng Canva tạo 1 chiếc Infographic tóm tắt 5 nguyên tắc trên rồi chèn vào đây nhé!</span></p>
-        </div>
+        <div style="display: flex; flex-direction: column; align-items: center;"><img src="/b6_anh1.png" alt="Infographic" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); object-fit: contain;">
+            <p style="text-align: center; color: var(--text-muted); font-size: 0.9em; margin-top: 8px;">Minh chứng: Infographic 5 Nguyên Tắc Dùng AI</p></div>
       </div>
     </div>
   </div>
