@@ -222,10 +222,63 @@ ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
   </div>
 
   <div id="modal-task-3" class="modal">
-    <div class="modal-content">
+    <div class="modal-content" style="max-width: 900px;">
       <span class="close-btn" onclick="closeModal('modal-task-3')">&times;</span>
-      <h2>Nhiệm vụ 3: Viết Prompt hiệu quả</h2>
-      <p><em>[Trình bày Prompt ban đầu, Prompt cải tiến, và so sánh kết quả]</em></p>
+      <h2 style="margin-bottom: 20px; color: var(--primary-color);">Nhiệm vụ 3: Kỹ thuật Prompt Engineering</h2>
+      
+      <p style="margin-bottom: 24px;">Để tối ưu hóa sự hỗ trợ của AI trong việc học ngành CNTT, mình đã áp dụng các kỹ thuật Prompt Engineering nâng cao (Role prompting, Chain-of-Thought, Few-shot) vào 3 tác vụ học tập phổ biến.</p>
+
+      <div style="margin-bottom: 24px;">
+        <h3>1. Giải thích khái niệm phức tạp (Lập trình hướng đối tượng - OOP)</h3>
+        <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; margin-top: 12px;">
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <h4 style="color: #dc2626;">Prompt Cơ bản</h4>
+            <p style="font-size: 0.9em; font-family: monospace; margin-top: 8px;">"Giải thích tính Đa hình (Polymorphism) trong lập trình Java."</p>
+            <p style="font-size: 0.85em; margin-top: 12px; color: var(--text-muted);"><strong>Kết quả:</strong> AI trả về định nghĩa khô khan từ sách giáo khoa, rất khó hiểu đối với sinh viên mới bắt đầu.</p>
+          </div>
+          <div style="background: var(--bg-color); padding: 16px; border-radius: 8px; border: 1px solid var(--border-color);">
+            <h4 style="color: #2563eb;">Prompt Cải tiến</h4>
+            <p style="font-size: 0.9em; font-family: monospace; margin-top: 8px;">"Hãy giải thích tính Đa hình trong Java bằng ngôn ngữ đơn giản, kèm theo một đoạn code ví dụ ngắn gọn."</p>
+            <p style="font-size: 0.85em; margin-top: 12px; color: var(--text-muted);"><strong>Kết quả:</strong> Đã dễ hiểu hơn, có code minh họa, nhưng thiếu chiều sâu về mặt nguyên lý hoạt động của máy ảo.</p>
+          </div>
+          <div style="background: #e0f2fe; padding: 16px; border-radius: 8px; border: 1px solid #bae6fd;">
+            <h4 style="color: #0369a1;">Prompt Nâng cao (Role + CoT)</h4>
+            <p style="font-size: 0.9em; font-family: monospace; margin-top: 8px;">"Đóng vai là một Senior Developer. Hãy giải thích 'Đa hình' trong Java cho một thực tập sinh bằng một phép ẩn dụ thực tế. Sau đó phân tích từng bước (chain-of-thought) cách JVM xử lý method overriding trong Run-time."</p>
+            <p style="font-size: 0.85em; margin-top: 12px; color: #075985;"><strong>Kết quả:</strong> Câu trả lời cực kỳ sinh động, vừa dễ hiểu nhờ phép ẩn dụ, vừa phân tích sâu vào cơ chế lõi của máy ảo Java (JVM).</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>2. Tóm tắt tài liệu & Tạo bộ câu hỏi ôn tập</h3>
+        <p style="color: var(--text-muted); font-size: 0.95em;"><em>* Các quy trình tương tự cũng được áp dụng thành công để tóm tắt cuốn sách "Clean Code" bằng kỹ thuật Few-shot examples, và tạo ra 10 câu hỏi trắc nghiệm môn Mạng Máy tính theo mức độ khó tăng dần.</em></p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>3. Phân tích cơ chế & Lý do hiệu quả</h3>
+        <p>Thông qua thử nghiệm, Prompt Nâng cao mang lại hiệu quả vượt trội nhờ vào việc hiểu rõ cơ chế hoạt động của mô hình LLM:</p>
+        <ul style="margin-left: 20px; margin-top: 8px;">
+          <li><strong>Role Prompting:</strong> Bằng cách ép AI "đóng vai", ta thiết lập được không gian Vector (Context Window) tập trung vào một vùng kiến thức chuyên môn cụ thể, loại bỏ các thông tin gây nhiễu.</li>
+          <li><strong>Chain-of-Thought (CoT):</strong> Yêu cầu AI "phân tích từng bước" buộc mô hình phải sinh ra các token trung gian. Việc này giúp AI suy luận logic hơn, giảm thiểu tối đa hiện tượng "ảo giác" (Hallucination) thường gặp.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>4. Bộ nguyên tắc vàng (Tips) khi viết Prompt</h3>
+        <ul style="margin-left: 20px; margin-top: 8px; background: #f8fafc; padding: 16px 16px 16px 40px; border-radius: 8px; border: 1px solid var(--border-color);">
+          <li>Cung cấp bối cảnh (Context) cụ thể, xác định đối tượng người đọc.</li>
+          <li>Chỉ định rõ định dạng đầu ra (Output format: Bảng Markdown, Bullet points, Code block).</li>
+          <li>Sử dụng các dấu phân tách (như <code>"""</code> hoặc <code>###</code>) để AI phân biệt rõ lệnh của con người và dữ liệu đầu vào.</li>
+          <li><strong>Critique & Revise:</strong> Nếu AI làm chưa đúng ý, không nên tạo chat mới ngay mà hãy bắt lỗi và yêu cầu AI tự sửa chữa trong cùng một phiên chat.</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 12px;">
+        <h3>5. Hình ảnh minh chứng</h3>
+        <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center; margin-top: 12px;">
+            <p style="color: #64748b; font-weight: bold;">[XÓA Ô NÀY VÀ CHÈN THẺ <img src="anh_prompt.jpg"> TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Ảnh chụp màn hình chat thực tế với AI sử dụng Prompt Nâng cao</span></p>
+        </div>
+      </div>
     </div>
   </div>
 
