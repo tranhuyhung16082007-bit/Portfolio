@@ -106,12 +106,50 @@ document.querySelector('#app').innerHTML = `
     </div>
   </footer>
 
-  <!-- Modals for details -->
   <div id="modal-task-1" class="modal">
     <div class="modal-content">
       <span class="close-btn" onclick="closeModal('modal-task-1')">&times;</span>
-      <h2>Nhiệm vụ 1: Quản lý tệp và thư mục</h2>
-      <p><em>[Chèn nội dung cấu trúc thư mục tối ưu, quy tắc đặt tên, và hình ảnh minh họa vào đây]</em></p>
+      <h2 style="margin-bottom: 20px; color: var(--primary-color);">Nhiệm vụ 1: Quản lý tệp và thư mục tối ưu</h2>
+      
+      <div style="margin-bottom: 24px;">
+        <h3>1. Cấu trúc thư mục khoa học</h3>
+        <p>Để tối ưu hóa việc quản lý dữ liệu cá nhân, mình đã áp dụng phân cấp thư mục theo nguyên tắc "Từ tổng quan đến chi tiết". Dưới đây là mô hình cấu trúc thư mục áp dụng trong bài thực hành:</p>
+        <pre style="background: var(--bg-color); padding: 16px; border-radius: 8px; font-family: monospace; line-height: 1.5; border: 1px solid var(--border-color); margin-top: 12px; overflow-x: auto;">
+ThucHanh_TranHuyHung/          (Thư mục gốc của dự án)
+├── 01_TaiLieu_HocTap/         (Thư mục con theo bài thực hành)
+│   ├── GhiChuQuanTrong.txt    (Tệp tin đã được đổi tên và sao chép)
+│   └── DiChuyen.txt           (Tệp tin được di chuyển - Cut & Paste)
+├── 02_BaiTap_ThucHanh/        (Thư mục chứa sản phẩm làm ra)
+└── 03_TaiNguyen_Khac/         (Các tệp tin, hình ảnh dùng chung)
+        </pre>
+        <p style="margin-top: 12px;"><em>* Giải thích sự tối ưu:</em> Việc đánh số thứ tự tiền tố <code>01_, 02_</code> giúp các thư mục luôn được hệ điều hành sắp xếp theo đúng trình tự ưu tiên logic thay vì bị xếp lộn xộn theo bảng chữ cái. Các thao tác quản lý vòng đời tệp (Tạo mới -> Chỉnh sửa -> Xóa vào Recycle Bin -> Phục hồi) được thực hiện một cách có hệ thống.</p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>2. Quy tắc đặt tên tệp (Naming Convention)</h3>
+        <p>Mình áp dụng quy tắc đặt tên tệp kết hợp <strong>PascalCase</strong> (viết hoa chữ cái đầu mỗi từ) và sử dụng <strong>Dấu gạch dưới (_)</strong> làm dấu phân cách. Điều này giúp hệ thống tìm kiếm (Search) hoạt động hiệu quả hơn và tệp dễ đọc đối với cả con người lẫn máy tính.</p>
+        <ul style="margin-left: 20px; margin-top: 12px;">
+          <li><strong>Không sử dụng khoảng trắng và dấu tiếng Việt:</strong> Tránh được lỗi mã hóa UTF-8 khi chia sẻ dữ liệu qua các nền tảng hoặc hệ điều hành khác nhau (Mac/Linux/Windows).</li>
+          <li><strong>Tính mô tả cao:</strong> Tên tệp phản ánh chính xác nội dung (Ví dụ: <code>GhiChuQuanTrong.txt</code> thay vì chỉ là <code>GhiChu.txt</code>).</li>
+          <li><strong>Cấu trúc rõ ràng:</strong> <code>[Loại]_[TênMôTả]</code> (Ví dụ: <code>ThucHanh_TranHuyHung</code>).</li>
+        </ul>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3>3. Hình ảnh minh chứng thực hành</h3>
+        <p style="color: var(--text-muted); margin-bottom: 12px;">Dưới đây là các minh chứng cho các thao tác: Copy/Cut/Paste, đổi tên, xóa vĩnh viễn (Shift+Delete) và phục hồi từ Thùng rác.</p>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px;">
+          <!-- Khu vực bạn sẽ chèn ảnh 1 bằng thẻ <img> -->
+          <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
+            <p style="color: #64748b; font-weight: bold;">[XÓA Ô NÀY VÀ CHÈN THẺ <img src="anh1.jpg"> TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Cấu trúc thư mục & Đổi tên</span></p>
+          </div>
+          <!-- Khu vực bạn sẽ chèn ảnh 2 bằng thẻ <img> -->
+          <div style="background: #e2e8f0; height: 200px; border-radius: 8px; display: flex; align-items: center; justify-content: center; border: 2px dashed #94a3b8; text-align: center;">
+            <p style="color: #64748b; font-weight: bold;">[XÓA Ô NÀY VÀ CHÈN THẺ <img src="anh2.jpg"> TẠI ĐÂY]<br><span style="font-weight: normal; font-size: 0.9em;">Minh chứng: Cut/Paste & Recycle Bin</span></p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   
